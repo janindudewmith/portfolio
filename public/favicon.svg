@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background circle with gradient -->
+  <circle cx="32" cy="32" r="30" fill="url(#grad)" />
+  
+  <!-- Letter J as a path for better rendering -->
+  <path 
+    d="M36,16 L36,38 C36,42 33,46 28,46 L24,46" 
+    stroke="white" 
+    stroke-width="6" 
+    fill="none" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+  />
+  
+  <!-- Top bar of the J -->
+  <path 
+    d="M26,16 L46,16" 
+    stroke="white" 
+    stroke-width="6" 
+    fill="none" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+  />
+  
+  <!-- Define gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" /> <!-- Blue-800 -->
+      <stop offset="100%" stop-color="#3B82F6" /> <!-- Blue-500 -->
+    </linearGradient>
+  </defs>
+</svg> 

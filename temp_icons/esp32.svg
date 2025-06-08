@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="esp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00979D"/>
+      <stop offset="100%" stop-color="#008184"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="6" width="20" height="12" rx="1" fill="url(#esp-gradient)"/>
+  <rect x="4" y="8" width="16" height="8" rx="0.5" fill="#111111"/>
+  <circle cx="7" cy="12" r="1.5" fill="#FFFFFF"/>
+  <circle cx="12" cy="12" r="1.5" fill="#FFFFFF"/>
+  <circle cx="17" cy="12" r="1.5" fill="#FFFFFF"/>
+  <rect x="6" y="4" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="10" y="4" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="14" y="4" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="18" y="4" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="6" y="18" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="10" y="18" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="14" y="18" width="2" height="2" fill="#E6E6E6"/>
+  <rect x="18" y="18" width="2" height="2" fill="#E6E6E6"/>
+  <text x="6.5" y="13" font-family="Arial" font-size="2" fill="#FFFFFF">ESP32</text>
+</svg> 
