@@ -84,10 +84,10 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Skills & Tools
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
             Technical skills and tools I use to bring engineering solutions to
             life
           </p>
@@ -122,7 +122,7 @@ const Skills: React.FC = () => {
                 >
                   {category.icon}
                 </motion.div>
-                <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
                   {category.title}
                 </h3>
 
@@ -146,9 +146,9 @@ const Skills: React.FC = () => {
                       boxShadow: "0 10px 20px rgba(0,0,0,0.3)",
                       transition: { duration: 0.2 },
                     }}
-                    className="bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm border border-gray-800/50 rounded-lg px-4 py-2 text-gray-300 hover:text-white hover:border-gray-600 transition-all duration-300 flex items-center gap-3 shadow-md"
+                    className="bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm border border-gray-800/50 rounded-lg px-3 sm:px-4 py-2 text-xs sm:text-sm md:text-base text-gray-300 hover:text-white hover:border-gray-600 transition-all duration-300 flex items-center gap-2 sm:gap-3 shadow-md"
                   >
-                    <div className="w-6 h-6 flex-shrink-0 relative flex items-center justify-center">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 relative flex items-center justify-center">
                       <img
                         src={skill.logo}
                         alt={`${skill.name} logo`}
@@ -169,7 +169,9 @@ const Skills: React.FC = () => {
                         }}
                       />
                     </div>
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium text-xs sm:text-sm">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>

@@ -50,9 +50,79 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
         <div className="flex items-center justify-between">
           <div
             onClick={() => scrollToSection("home")}
-            className="text-2xl font-bold cursor-pointer text-white"
+            className="cursor-pointer text-white group"
           >
-            Janindu Dewmith
+            <div className="relative flex items-center transition-transform duration-300 transform group-hover:scale-105">
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                className="overflow-visible"
+              >
+                {/* Logo background with gradient */}
+                <defs>
+                  <linearGradient
+                    id="logoGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stopColor="#ffffff" />
+                    <stop offset="100%" stopColor="#aaaaaa" />
+                  </linearGradient>
+                </defs>
+
+                {/* Logo shape */}
+                <rect
+                  x="2"
+                  y="2"
+                  width="40"
+                  height="40"
+                  rx="10"
+                  fill="none"
+                  stroke="url(#logoGradient)"
+                  strokeWidth="2"
+                  className="transition-all duration-300 group-hover:stroke-white"
+                />
+
+                {/* JD text */}
+                <text
+                  x="22"
+                  y="27"
+                  fontFamily="Arial, sans-serif"
+                  fontSize="20"
+                  fontWeight="bold"
+                  fill="url(#logoGradient)"
+                  textAnchor="middle"
+                  className="transition-all duration-300 group-hover:fill-white"
+                >
+                  JD
+                </text>
+
+                {/* Decorative accent lines */}
+                <line
+                  x1="12"
+                  y1="32"
+                  x2="32"
+                  y2="32"
+                  stroke="url(#logoGradient)"
+                  strokeWidth="1.5"
+                />
+                <line
+                  x1="32"
+                  y1="12"
+                  x2="32"
+                  y2="32"
+                  stroke="url(#logoGradient)"
+                  strokeWidth="1.5"
+                  opacity="0.7"
+                />
+              </svg>
+
+              {/* Animated light effect */}
+              <div className="absolute -inset-1 bg-white/10 rounded-lg blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

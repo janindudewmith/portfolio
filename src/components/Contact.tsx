@@ -160,9 +160,14 @@ const Contact: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="p-6 rounded-lg flex flex-col items-center gap-4 bg-green-500/10 text-green-300 border border-green-500/30"
               >
-                <Check size={40} className="text-green-400" />
-                <h3 className="text-xl font-bold text-white">Thank You!</h3>
-                <p className="text-center text-gray-300">
+                <Check
+                  size={32}
+                  className="sm:w-10 sm:h-10 md:w-12 md:h-12 text-green-400"
+                />
+                <h3 className="text-lg sm:text-xl font-bold text-white">
+                  Thank You!
+                </h3>
+                <p className="text-center text-gray-300 text-sm sm:text-base">
                   Your message has been sent successfully. I'll get back to you
                   soon!
                 </p>
@@ -281,12 +286,12 @@ const Contact: React.FC = () => {
                   {state.submitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span>Sending...</span>
+                      <span className="text-sm sm:text-base">Sending...</span>
                     </>
                   ) : (
                     <>
-                      <Send size={18} />
-                      <span>Send Message</span>
+                      <Send size={16} className="sm:w-5 sm:h-5" />
+                      <span className="text-sm sm:text-base">Send Message</span>
                     </>
                   )}
                 </motion.button>
